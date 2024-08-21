@@ -131,6 +131,7 @@
 	printf ("\t1 - Rigistrar nomes \n\n");
 	printf ("\t2 - Consultar nomes \n\n");
 	printf ("\t3 - Deletar nomes \n\n"); 
+	prontf ("\t4 - sair do sistema \n\n");
 	printf ("opção:"); // fim do menu 
 	
 	scanf ("%d" , &opcao); // aarmazenando a escolha do usuário
@@ -150,6 +151,11 @@
 		case 3:
 		deletar();
 		break; 
+		
+		case 4: 
+		printf ("Obrigada por utilizar o sistema!\n");
+		return 0;
+		break;
 		
 		default: 
 		printf ("esta opção não esta disponível, tente novamente!");
